@@ -1,5 +1,5 @@
 
-# Toggle Button
+# Rock-Paper-Scissors
 
 > js front exercise
 
