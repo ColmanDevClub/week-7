@@ -1,26 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Calculator app</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Aviel Bitton | Calculator app</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./css/desktopCSS.css">
 </head>
+
 <body>
-
-
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+  <div class="calculatur">
+    <div class="calculatur-head">
+      <div>calc</div>
+      <div>theme</div>
+    </div>
+    <div class="calculatur-input">
+      <div id="calculatur-input-num" class="calculatur-input-num"></div>
+    </div>
+    <div class="calculatur-keys">
+      <div class="calculatur-keys-container-1">
+        <div class="calculatur-keys-grid-4-item">
+          <div class="key-box key-box-num">7</div>
+          <div class="key-box key-box-num">8</div>
+          <div class="key-box key-box-num">9</div>
+          <div id ="key-del" class="key-box key-del-restet ">DEL</div>
+          <div class="key-box key-box-num">4</div>
+          <div class="key-box key-box-num">5</div>
+          <div class="key-box key-box-num">6</div>
+          <div id="key-math" class="key-box ">+</div>
+          <div class="key-box key-box-num">1</div>
+          <div class="key-box key-box-num">2</div>
+          <div class="key-box key-box-num">3</div>
+          <div id="key-math" class="key-box ">-</div>
+          <div class="key-box ">.</div>
+          <div class="key-box key-box-num">0</div>
+          <div id="key-math" class="key-box">/</div>
+          <div id="key-math" class="key-box">x</div>
+        </div>
+        <div class="calculatur-keys-grid-2-item">
+          <div id="key-reset" class="key-box key-del-restet ">RESET</div>
+          <div id="key-result"class="key-box key-red">=</div>
+        </div>
+      </div>
+    </div>
   </div>
+
+  <script src="./js/jsInputs.js"></script>
 </body>
+
 </html>
