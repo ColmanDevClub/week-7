@@ -4,6 +4,7 @@ const element_btn_del =document.getElementById("key-del");
 const element_btn_math = document.querySelectorAll("#key-math");
 const element_btn_reset = document.getElementById("key-reset");
 const element_btn_result = document.getElementById("key-result");
+
 let input_num = 0;
 let value;
 let nextValue;
@@ -86,5 +87,6 @@ function button_result(e){
         nextValue=num_key_Queue.shift()
         calculatur(sign); 
        }
-    return console.log(resutls)
+    element_num_input.textContent=resutls;
+    return 
 }
