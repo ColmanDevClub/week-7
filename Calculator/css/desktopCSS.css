@@ -1,0 +1,95 @@
+:root{
+    /* Backgrounds */
+    --main_background: hsl(222, 26%, 31%);
+    --toggle-keypad-background:hsl(223, 31%, 20%);
+    --screen-background: hsl(224, 36%, 15%);
+    /* Keys */
+    --key-background:hsl(225, 21%, 49%);
+    --key-shadow:hsl(224, 28%, 35%);
+    --key-toggle-background: hsl(6, 63%, 50%);
+    --key-shadow-red: hsl(6, 70%, 34%);
+    --key-background-orange:hsl(30, 25%, 89%);
+    --key-shadow-orange:hsl(28, 16%, 65%);
+    /* Text */
+    --them1-texe:hsl(221, 14%, 31%);
+}
+body {
+    height:100vh;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    display: grid;
+    place-items: center;
+    text-align: center;
+    background-color: var(--main_background);
+    color: white;
+    font-size: 20px;
+    font-family: 'Spartan', sans-serif;
+  }
+.calculatur{
+    position: relative;
+    width: 500px;
+    height: 400px;
+    padding: 30px;
+}
+.calculatur-head{
+    position: relative;
+    height:15%;
+    display: flex;
+    justify-content: space-between;
+}
+.calculatur-input{
+    position: relative;
+    height:25%;
+    background-color:var(--screen-background);
+    border-radius: 20px;
+    margin-bottom: 2%;
+    text-align: right;
+}
+.calculatur-input-num{
+    font-size: 40px;
+    position: relative;
+    top: 30px;
+    left: -10px;
+}
+.calculatur-keys{
+    position: relative;
+    height:60%;
+    background-color: var(--toggle-keypad-background);
+    padding-bottom: 30px;
+    border-radius: 20px;
+}
+.calculatur-keys-container-1{
+    padding: 20px;
+
+}
+.calculatur-keys-grid-4-item{
+    position: relative;
+    height: 80%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.calculatur-keys-grid-2-item{
+    position: relative;
+    display: grid;
+    height: 20%;
+    grid-template-columns: 1fr 1fr ;
+}
+.key-box{
+    position: relative;
+    padding-top: 10px;
+    border-radius: 20px;
+    margin: 6px;
+    background-color: ivory;
+    color: var(--them1-texe);
+}
+.key-del-restet{
+    font-size: 15px;
+    color: white;
+    background-color: var(--key-background);
+}
+.key-red{
+    color: white;
+    background-color: var(--key-toggle-background);
+}
